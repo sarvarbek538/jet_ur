@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('./photo_2023-06-20_12-07-53.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.cta-button {
+    background: #FFD700;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px;
+    border: 1px solid black;
+    background: #f9f9f9;
+}
+
+.model {
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: black;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+form button {
+    background: black;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #333;
+}
+
+.model>img {
+    border-radius: 10px;
+    display: flex;
+    margin-left: 890px;
+    margin-top: 5px;
+}
+
+.h3 {
+    margin-top: -170px;
+}
+
+
+/* Media queries for responsive design */
+
+@media (max-width: 1200px) {
+    .model>img {
+        margin-left: 800px;
+    }
+}
+
+@media (max-width: 992px) {
+    .model>img {
+        margin-left: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .model>img {
+        margin-left: 400px;
+    }
+    .h3 {
+        margin-top: -150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .model>img {
+        margin-left: 200px;
+    }
+    .h3 {
+        margin-top: -130px;
+    }
+}
+
+@media (max-width: 480px) {
+    .model>img {
+        margin-left: 0;
+        display: block;
+        margin: 0 auto;
+    }
+    .h3 {
+        margin-top: -100px;
+        text-align: center;
+    }
+}
